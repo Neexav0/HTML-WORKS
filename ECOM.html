@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopEasy</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body id="top">
+
+  <header>
+    <h1>ShopEasy</h1>
+    <p>Your Simple Online Store</p>
+    <div class="search-bar">
+      <label class="visually-hidden" for="search">Search products</label>
+      <input type="search" id="search" name="search" placeholder="Search products...">
+      <button type="button">Cart 🛒</button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#top">Home</a>
+    <a href="#products">Products</a>
+    <a href="#comparison">Categories</a>
+    <a href="#offers">Offers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <section class="banner" id="offers">
+      <h2>🔥 BIGGEST SALE - UP TO 67% OFF 🔥</h2>
+      <p>Grab your pasandida products today!</p>
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="products">
+
+        <div class="card">
+          <span class="badge">SALE</span>
+          <img src="https://i.pinimg.com/736x/ef/79/20/ef792081bdd03528c7fe82b831edf4bb.jpg" alt="Laptop">
+          <h3>Mouse Laptop</h3>
+          <p>Powerful laptop for students and developers.</p>
+          <p class="price">₹1,29,999</p>
+          <button type="button">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <span class="badge">SALE</span>
+          <img src="https://i.pinimg.com/736x/58/40/ce/5840ce7fea2c9561b575227c9b31d0ee.jpg" alt="Headphones">
+          <h3>Hamster Headphones</h3>
+          <p>Wireless headphones with excellent sound.</p>
+          <p class="price">₹5,999</p>
+          <button type="button">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="https://i.pinimg.com/1200x/1a/ba/fb/1abafb14825c44b36d26df4c296eaa14.jpg" alt="Keyboard">
+          <h3>Husky Keyboard</h3>
+          <p>Mechanical keyboard for programmers.</p>
+          <p class="price">₹4,999</p>
+          <button type="button">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/1d/b8/d8/1db8d813d4143fc15e7f46d55edb03a6.jpg" alt="Smart Watch">
+          <h3>Cat Smart Watch</h3>
+          <p>Smart watch with fitness tracking features.</p>
+          <p class="price">₹2,999</p>
+          <button type="button">Add to Cart</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="comparison">
+      <h2>Product Comparison</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Mouse Laptop</th>
+            <td>₹1,29,999</td>
+            <td>4.5 ⭐</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <th scope="row">Hamster Headphones</th>
+            <td>₹5,999</td>
+            <td>4.2 ⭐</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <th scope="row">Husky Keyboard</th>
+            <td>₹4,999</td>
+            <td>4.8 ⭐</td>
+            <td>Out of Stock</td>
+          </tr>
+          <tr>
+            <th scope="row">Cat Smart Watch</th>
+            <td>₹2,999</td>
+            <td>4.3 ⭐</td>
+            <td>Available</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="signup">
+      <h2>Create Your Account</h2>
+      <form>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <div class="options">
+          <label>Gender</label>
+          <input type="radio" name="gender" id="male" value="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="other">
+          <label for="other">Other</label>
+        </div>
+
+        <div class="options">
+          <label>Interested Categories</label>
+          <input type="checkbox" id="electronics" name="category" value="electronics">
+          <label for="electronics">Electronics</label>
+          <input type="checkbox" id="fashion" name="category" value="fashion">
+          <label for="fashion">Fashion</label>
+          <input type="checkbox" id="books" name="category" value="books">
+          <label for="books">Books</label>
+        </div>
+
+        <label for="city">City</label>
+        <select id="city" name="city">
+          <option value="">Select City</option>
+          <option>Delhi</option>
+          <option>Mumbai</option>
+          <option>Bengaluru</option>
+          <option>Chennai</option>
+          <option>Kolkata</option>
+        </select>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <p>© 2026 ShopEasy</p>
+    <a href="#">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#">Privacy Policy</a>
+  </footer>
+
+</body>
+</html>
